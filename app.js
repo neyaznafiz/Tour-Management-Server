@@ -11,4 +11,9 @@ app.get("/", (req, res) => {
   res.send("Route is working! YaY!");
 });
 
-module.exports = app
+app.post("/api/v1/tour-info", (req, res, next) => {
+    // res.send("post is working");
+    res.send(req.body)
+});
+
+module.exports = app;
