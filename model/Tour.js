@@ -13,14 +13,14 @@ const tourSchema = mongoose.Schema(
 
     description: {
       type: String,
-      minLength: [30, "Please Describe about the Tour"],
+      minLength: [10, "Please Describe about the Tour"],
       required: [true, "Tour Description is Required..!"],
       trim: true,
     },
 
-    image: {
-      required: [true, "Tour Image is Required..!"],
-    },
+    // image: {
+    //   required: [true, "Tour Image is Required..!"],
+    // },
 
     price: {
       type: Number,
@@ -60,10 +60,10 @@ const tourSchema = mongoose.Schema(
       default: Date.now,
     },
 
-    // updatedAt: {
-    //   type: Date,
-    //   default: Date.now,
-    // },
+    updatedAt: {
+      type: Date,
+      default: Date.now,
+    },
   },
   { timestamps: true }
 );
