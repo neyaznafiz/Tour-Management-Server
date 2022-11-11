@@ -7,6 +7,14 @@
     "start": "node server",
     "dev": "nodemon server"
   },
+  "keywords": [
+    "Tour_Management",
+    "Tour Management Server",
+    "Mongoose",
+    "MVC",
+    "NodeJs",
+    "ExpressJs"
+  ],
   "dependencies": {
     "colors": "^1.4.0",
     "cors": "^2.8.5",
